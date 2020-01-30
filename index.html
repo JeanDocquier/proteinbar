@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" crossorigin="anonymous" />
+
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css" integrity="sha256-eN7gD6kRzzeXS87cycVGlO3smXA9o+yeN0BDkTVaOc0=" crossorigin="anonymous" />
     <title>ProteinBar - Home</title>
 
 </head>
@@ -14,9 +20,8 @@
 <body>
 
     <script src="js/custom.min.js"></script>
-</body>
 <div class="menu-top">
-   <a href="#"> <img src="img/logo.png" alt="Protein-Bar-Logo"></a>
+    <a href="#"> <img src="img/logo.png" alt="Protein-Bar-Logo"></a>
     <div id="burger">
         <div></div>
         <div></div>
@@ -44,10 +49,13 @@
     </nav>
 </div>
 <header>
-    <div class="this-is-a-game-changer">
-        <h1>This is a changer</h1>
-        <p>franchise oppurtinites available in early 2020</p>
-        <a class="btn btn-primary" href="#">Avalaible now</a>
+    <div class="carousel this-is-a-game-changer">
+        <img src="img/88332BentoBox_franchise4.jpg" alt="">
+        <div class="content-header">
+            <h1>This is a changer</h1>
+            <p>franchise oppurtinites available in early 2020</p>
+            <a class="btn btn-primary" href="#">Avalaible now</a>
+        </div>
     </div>
     <!--<div class="this-is-a-changer">
         <h1>This is a changer</h1>
@@ -73,10 +81,12 @@
 </section>
 <section class="our-story">
     <div class="text">
-           <img src="img/76NzhhvXQvywRzLx9rSy_2017.08.26_ProteinBar-316.jpg" alt="Our_Story">
+        <img src="img/76NzhhvXQvywRzLx9rSy_2017.08.26_ProteinBar-316.jpg" alt="Our_Story">
+                <div class="frame frame-ghost">
 
         <h2>Our story</h2>
         <a class="btn btn-primary" href="">Lean More</a>
+        </div>
     </div>
     <img src="img/10630PROTIENBAR_381.jpg" alt="Our_Story">
 
@@ -90,7 +100,6 @@
             <a class="btn btn-primary" href="">Learn More</a>
         </div>
     </div>
-    <img src="img/42578Elena_Side_Plank.jpg" alt="Elena_Side">
 </section>
 <footer>
     <p>Eat Socially</p>
@@ -100,4 +109,22 @@
     <a href="#">Order Online</a>
     <a href="#">Email Signup</a>
 </nav>
+
+
+<!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      effect: 'fade',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
 </html>
